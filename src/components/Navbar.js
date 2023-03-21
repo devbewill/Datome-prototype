@@ -12,7 +12,10 @@ export default function Navbar() {
           <li>Faq</li>
           <li>About</li>
         </ul>
-        <Button label="Free Trial" target=""></Button>
+        <div className="actions">
+          <Button label="Free Trial" target="#"></Button>
+          <Button label="Contact us" target="#" secondary></Button>
+        </div>
       </div>
     </NavbarStyled>
   );
@@ -42,20 +45,8 @@ const NavbarStyled = styled.nav`
     }
   }
 
-  .cta {
-    cursor: pointer;
-
-    a {
-      background-color: #5cfe50;
-      color: #000;
-      box-shadow: inset 0 0 0 1px #5cfe50;
-      display: block;
-      background-image: none;
-      padding: 12px 32px;
-      font-weight: 700;
-      text-align: center;
-      border-radius: 128px;
-      line-height: 24px;
-    }
+  .actions {
+    display: flex;
+    column-gap: 1em;
   }
 `;

@@ -1,9 +1,10 @@
 import styled from "styled-components";
 
-export default function Button({ label, target }) {
+export default function Button(props) {
+  console.log(props);
   return (
-    <ButtonStyled>
-      <a href={target}>{label}</a>
+    <ButtonStyled {...props}>
+      <a href={props.target}>{props.label}</a>
     </ButtonStyled>
   );
 }
@@ -20,5 +21,6 @@ const ButtonStyled = styled.div`
 
   a {
     color: ${(props) => props.theme.text};
+    /* color: ${(props) => (props.secondary ? "blue" : "yellow")}; */
   }
 `;
