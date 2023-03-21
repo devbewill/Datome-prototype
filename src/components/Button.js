@@ -17,7 +17,7 @@ const ButtonStyled = styled.div`
   border: 1px solid
     ${(props) => (props.secondary ? props.theme.white : props.theme.primary)};
   padding: 12px 32px;
-  font-weight: 600;
+  font-weight: 400;
   text-align: center;
   border-radius: 50px;
   transition: all 0.2s linear;

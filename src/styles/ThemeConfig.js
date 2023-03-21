@@ -3,7 +3,8 @@ import { createGlobalStyle } from "styled-components";
 export const themeVars = {
   black: "#000",
   white: "#fff",
-  primary: "#98ff27",
+  primary: "#ffa0fa",
+  padded: "1440px",
 };
 
 export const GlobalStyles = createGlobalStyle`
