@@ -18,7 +18,7 @@ export default function Intro(props) {
         <div className="image-container">
           <Image
             priority
-            src="positioning.svg"
+            src="g10.svg"
             fill
             style={{ objectFit: "contain" }}
             alt="positioning chart"
@@ -30,6 +30,7 @@ export default function Intro(props) {
 }
 
 const IntroStyled = styled.div`
+  padding-left: 10em;
   color: #fff;
   background: #000;
   width: 100%;
@@ -39,6 +40,7 @@ const IntroStyled = styled.div`
   flex-direction: row;
   align-content: center;
   justify-content: space-between;
+  overflow: hidden;
 
   .introText {
     display: flex;
@@ -48,7 +50,7 @@ const IntroStyled = styled.div`
     min-width: 35vw;
 
     h1 {
-      font-weight: 400;
+      font-weight: 600;
       font-size: 4.5rem;
     }
 
@@ -63,10 +65,12 @@ const IntroStyled = styled.div`
 
     .image-container {
       position: relative;
-      width: 50%;
+      width: 150%;
       height: 100%;
+      margin-top: -1vh;
       margin-left: auto;
-      margin-right: 10%;
+      margin-right: -33vw;
+      overflow: hidden;
     }
   }
 `;

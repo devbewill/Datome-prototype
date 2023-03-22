@@ -4,6 +4,10 @@ import Section from "@/components/Section";
 import Intro from "@/components/Intro";
 import HowWorks from "@/components/HowWorks";
 import Quote from "@/components/Quote";
+import Visual from "@/components/Visual";
+import TheContext from "@/components/TheContext";
+import Features from "@/components/Features";
+import Whatis from "@/components/Whatis";
 
 export default function Home() {
   return (
@@ -17,13 +21,25 @@ export default function Home() {
       <main>
         <Navbar></Navbar>
         <Section style={{ backgroundColor: "#000" }}>
-          <Intro padded></Intro>
+          <Intro></Intro>
+        </Section>
+        <Section style={{ backgroundColor: "#fff" }}>
+          <TheContext padded></TheContext>
+        </Section>
+        <Section style={{ backgroundColor: "#fff" }}>
+          <Features padded></Features>
+        </Section>
+        <Section style={{ backgroundColor: "#000" }}>
+          <Quote padded></Quote>
+        </Section>
+        <Section style={{ backgroundColor: "#fff" }}>
+          <Whatis padded></Whatis>
         </Section>
         <Section style={{ backgroundColor: "#fff" }}>
           <HowWorks padded></HowWorks>
         </Section>
-        <Section style={{ backgroundColor: "#000" }}>
-          <Quote padded></Quote>
+        <Section style={{ backgroundColor: "#fff" }}>
+          <Visual padded></Visual>
         </Section>
       </main>
     </>
