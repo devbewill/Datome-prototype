@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styled from "styled-components";
+import Button from "./Button";
 
 export default function Intro(props) {
   return (
@@ -11,6 +12,7 @@ export default function Intro(props) {
           safe IT ecosystem. Leverage in self-provisioning the real benefits of
           the blockchain.
         </p>
+        <Button label="Free trial"></Button>
       </div>
       <div className="introVisual">
         <div className="image-container">
@@ -43,10 +45,17 @@ const IntroStyled = styled.div`
     flex: 1;
     flex-direction: column;
     justify-content: center;
+    min-width: 35vw;
+
+    h1 {
+      font-weight: 400;
+      font-size: 4.5rem;
+    }
 
     p {
       font-size: 1.4rem;
-      margin-top: 1em;
+      line-height: 1.3;
+      margin: 1em 0 2em 0;
     }
   }
   .introVisual {

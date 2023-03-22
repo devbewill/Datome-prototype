@@ -27,6 +27,7 @@ const NavbarStyled = styled.nav`
   color: #fff;
   width: 100vw;
   z-index: 999;
+  border-bottom: 1px solid #fff;
 
   .container {
     margin: 0 auto;
@@ -38,6 +39,7 @@ const NavbarStyled = styled.nav`
   }
   .logo {
     font-size: 2em;
+    font-family: "Poppins", sans-serif;
   }
 
   ul {

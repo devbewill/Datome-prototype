@@ -2,6 +2,8 @@ import Head from "next/head";
 import Navbar from "@/components/Navbar";
 import Section from "@/components/Section";
 import Intro from "@/components/Intro";
+import HowWorks from "@/components/HowWorks";
+import Quote from "@/components/Quote";
 
 export default function Home() {
   return (
@@ -16,6 +18,12 @@ export default function Home() {
         <Navbar></Navbar>
         <Section style={{ backgroundColor: "#000" }}>
           <Intro padded></Intro>
+        </Section>
+        <Section style={{ backgroundColor: "#fff" }}>
+          <HowWorks padded></HowWorks>
+        </Section>
+        <Section style={{ backgroundColor: "#000" }}>
+          <Quote padded></Quote>
         </Section>
       </main>
     </>
